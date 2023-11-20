@@ -161,9 +161,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                 ),
                               ),
                        ),
-                       SizedBox(height: 40,),
-                       GestureDetector(
-                         onTap: (){
+            SizedBox(height: 40,),
+                      GestureDetector(
+                        onTap: (){
                             print("...Go to login Screen");
                             Navigator.of(context).push(
                               MaterialPageRoute(
@@ -171,7 +171,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               ),
                             );
                           },
-                         child: Container(
+                        child: Container(
                           margin: EdgeInsets.symmetric(horizontal: 60),
                           height: 50,
                           width: double.maxFinite,
@@ -181,8 +181,8 @@ class _RegisterPageState extends State<RegisterPage> {
                           child: Center(
                             child: Text('Register',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w700),),
                           ),
-                         ),
-                       )
+                    ),
+                    )
                     ],
                   ),
                 ),
@@ -192,6 +192,6 @@ class _RegisterPageState extends State<RegisterPage> {
           ],
         ),
       )
-    );;
+    );
   }
 }

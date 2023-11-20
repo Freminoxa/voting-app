@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:voting_app/pages/home_page.dart';
+import 'package:voting_app/pages/camera_screen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                             print("...Go to login Screen");
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => HomePage(),
+                                builder: (context) => CameraScreen(),
                               ),
                             );
                           },
@@ -132,6 +132,6 @@ class _LoginPageState extends State<LoginPage> {
           ],
         ),
       )
-    );;
+    );
   }
 }
